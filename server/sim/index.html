@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pana · simulador</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #0b0f14; --tinta: #d8e0e6; --suave: #6a7a88; --borde: #1e2a34; }
+  body { margin: 0; background: var(--bg); color: var(--tinta); font: 14px/1.4 'Hanken Grotesk', system-ui, sans-serif;
+         display: flex; gap: 32px; padding: 24px; flex-wrap: wrap; }
+  .placa { background: #1a1d21; padding: 18px 14px 26px; border-radius: 18px; box-shadow: 0 10px 40px #0008; }
+  canvas { width: 480px; height: 640px; image-rendering: pixelated; border-radius: 4px; display: block; touch-action: none; cursor: pointer; }
+  .panel { flex: 1; min-width: 280px; max-width: 520px; }
+  h1 { font-size: 20px; margin: 0 0 4px; } p { color: var(--suave); margin: 0 0 16px; }
+  button { background: #18222c; color: var(--tinta); border: 1px solid var(--borde); border-radius: 8px; padding: 6px 10px; margin: 0 6px 6px 0; cursor: pointer; font: inherit; }
+  button:hover { border-color: #40E0C0; }
+  input { width: 100%; box-sizing: border-box; background: #10161c; color: var(--tinta); border: 1px solid var(--borde); border-radius: 8px; padding: 8px; font: inherit; }
+  pre { background: #070a0d; border: 1px solid var(--borde); border-radius: 8px; padding: 10px; height: 260px; overflow: auto; font: 12px/1.5 ui-monospace, monospace; white-space: pre-wrap; }
+  #mood { font: 12px ui-monospace, monospace; color: var(--suave); margin-bottom: 12px; }
+  @media (max-width: 560px) { canvas { width: 240px; height: 320px; } body { padding: 16px; } }
+</style>
+</head>
+<body>
+  <div class="placa"><canvas id="pantalla" width="240" height="320"></canvas></div>
+  <div class="panel">
+    <h1>Pana</h1>
+    <p>Mantén pulsada la cara para hablar (el micro solo funciona abriendo esto por localhost). Toca la cara, las tarjetas y los botones como en la placa.</p>
+    <div id="mood">ánimo…</div>
+    <div id="emos"></div>
+    <div style="margin:8px 0 12px"><button id="lead">Simular lead nuevo</button><button id="ciclo">Forzar ciclo</button></div>
+    <form id="chat"><input name="texto" placeholder="Escríbele algo a Pana…" autocomplete="off"></form>
+    <pre id="log"></pre>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

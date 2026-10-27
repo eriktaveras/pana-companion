@@ -1,0 +1,8 @@
+# Hosyond 4.3": las animaciones del paquete hermes-agent-pack ocupan ~4,7 MB, apps de 7,75 MB (con OTA)
+# Name,   Type, SubType, Offset,   Size,     Flags
+nvs,      data, nvs,     0x9000,   0x5000,
+otadata,  data, ota,     0xe000,   0x2000,
+app0,     app,  ota_0,   0x10000,  0x7C0000,
+app1,     app,  ota_1,   0x7D0000, 0x7C0000,
+spiffs,   data, spiffs,  0xF90000, 0x60000,
+coredump, data, coredump,0xFF0000, 0x10000,

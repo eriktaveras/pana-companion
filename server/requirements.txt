@@ -1,0 +1,8 @@
+fastapi>=0.115
+uvicorn[standard]>=0.32
+httpx>=0.28
+pydantic>=2.10
+numpy>=2.1
+scipy>=1.14
+piper-tts>=1.3
+pytest>=8

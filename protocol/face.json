@@ -1,0 +1,16 @@
+{
+  "_doc": "Parámetros de la cara por emoción. Fuente única: tools/gen_face.py genera firmware/include/face_params.h y el simulador lee este archivo. Unidades en px sobre un lienzo de 240x170. ew/eh = ancho/alto del ojo, gap = separación entre centros, ey = centro vertical, round = radio de esquina, lid = párpado (0 abierto, 1 cerrado), tilt = inclinación del párpado (+ = enfadado/alerta hacia dentro, - = triste), smile = curvatura de los ojos por abajo (ojos felices en arco, 0..1), mw = ancho de la boca, mcurve = curva (+ sonríe, - triste), mopen = apertura en reposo, blush = mejillas (0..1), color = RGB hex, shape = forma del ojo (rect, heart, spiral; sin conexión siempre es x), extra = adorno",
+  "emotions": {
+    "idle":     {"ew": 46, "eh": 58, "gap": 92, "ey": 70, "round": 16, "lid": 0.00, "tilt":  0.0, "smile": 0.0, "mw": 34, "mcurve":  4, "mopen": 0, "blush": 0.0, "color": "40E0C0", "shape": "rect", "extra": ""},
+    "happy":    {"ew": 50, "eh": 50, "gap": 92, "ey": 68, "round": 20, "lid": 0.00, "tilt":  0.0, "smile": 0.7, "mw": 48, "mcurve": 14, "mopen": 6, "blush": 0.7, "color": "5CF08A", "shape": "rect", "extra": ""},
+    "thinking": {"ew": 42, "eh": 44, "gap": 90, "ey": 64, "round": 14, "lid": 0.25, "tilt": -0.2, "smile": 0.0, "mw": 22, "mcurve": -2, "mopen": 0, "blush": 0.0, "color": "7AA8FF", "shape": "rect", "extra": "dots"},
+    "talking":  {"ew": 46, "eh": 56, "gap": 92, "ey": 68, "round": 16, "lid": 0.00, "tilt":  0.0, "smile": 0.2, "mw": 40, "mcurve":  6, "mopen": 4, "blush": 0.0, "color": "40E0C0", "shape": "rect", "extra": ""},
+    "alert":    {"ew": 52, "eh": 66, "gap": 94, "ey": 70, "round": 12, "lid": 0.00, "tilt":  0.5, "smile": 0.0, "mw": 26, "mcurve":  0, "mopen": 10, "blush": 0.0, "color": "FFB020", "shape": "rect", "extra": "bang"},
+    "sad":      {"ew": 44, "eh": 48, "gap": 90, "ey": 76, "round": 16, "lid": 0.30, "tilt": -0.6, "smile": 0.0, "mw": 32, "mcurve": -10, "mopen": 0, "blush": 0.0, "color": "6A8CFF", "shape": "rect", "extra": ""},
+    "bored":    {"ew": 46, "eh": 40, "gap": 92, "ey": 74, "round": 14, "lid": 0.55, "tilt":  0.0, "smile": 0.0, "mw": 28, "mcurve": -2, "mopen": 0, "blush": 0.0, "color": "8A9AA8", "shape": "rect", "extra": ""},
+    "sleeping": {"ew": 46, "eh": 6,  "gap": 92, "ey": 80, "round": 3,  "lid": 0.00, "tilt":  0.0, "smile": 0.0, "mw": 16, "mcurve":  0, "mopen": 3, "blush": 0.0, "color": "3A6A80", "shape": "rect", "extra": "zzz"},
+    "excited":  {"ew": 56, "eh": 62, "gap": 96, "ey": 66, "round": 22, "lid": 0.00, "tilt":  0.0, "smile": 0.5, "mw": 52, "mcurve": 16, "mopen": 14, "blush": 0.9, "color": "FF6AD5", "shape": "rect", "extra": "sparkle"},
+    "love":     {"ew": 54, "eh": 54, "gap": 94, "ey": 68, "round": 20, "lid": 0.00, "tilt":  0.0, "smile": 0.0, "mw": 40, "mcurve": 12, "mopen": 4, "blush": 1.0, "color": "FF5C8A", "shape": "heart", "extra": ""},
+    "confused": {"ew": 46, "eh": 50, "gap": 92, "ey": 70, "round": 16, "lid": 0.00, "tilt":  0.0, "smile": 0.0, "mw": 26, "mcurve": -4, "mopen": 0, "blush": 0.0, "color": "B48CFF", "shape": "spiral", "extra": ""}
+  }
+}

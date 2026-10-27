@@ -1,0 +1,16 @@
+# Servicio de usuario de systemd para el cerebro de Pana.
+#   cp deploy/pana.service ~/.config/systemd/user/ && systemctl --user enable --now pana
+# Ajusta las rutas si clonaste el repo en otro sitio. Para que arranque sin sesión abierta:
+#   sudo loginctl enable-linger $USER
+[Unit]
+Description=Pana companion (servidor)
+After=network-online.target
+
+[Service]
+WorkingDirectory=%h/pana-companion/server
+ExecStart=%h/pana-companion/.venv/bin/python main.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

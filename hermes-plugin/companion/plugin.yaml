@@ -1,0 +1,13 @@
+name: companion
+version: "0.2.0"
+description: "Muestra en la placa de Pana (servidor :8770) lo que Hermes hace en cualquier canal: dashboard, terminal, Telegram, Mattermost."
+author: "pana-companion"
+license: MIT
+api_version: 1
+kind: standalone
+provides_hooks:
+  - pre_llm_call
+  - pre_tool_call
+  - post_tool_call
+  - post_llm_call
+  - on_session_end

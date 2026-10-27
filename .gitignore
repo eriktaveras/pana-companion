@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+server/data/
+server/voices/
+firmware/.pio/
+firmware/include/secrets.h
+avatar/
+*.ppm
+.DS_Store
