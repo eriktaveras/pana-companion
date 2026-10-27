@@ -46,7 +46,7 @@ Todas son de **Waveshare**. El proyecto nació con su apoyo y la idea es cubrir 
 | **ESP32-S3-Touch-AMOLED-1.75** / **1.75C** | AMOLED redonda 1,75″ · 466×466 · CO5300 | ✅ Soportada (`amoled175`) | [Waveshare](https://www.waveshare.com/esp32-s3-touch-amoled-1.75c.htm?sku=33691) · [Amazon](https://link.amazon/B07MvbpFL) |
 | **ESP32-P4-WIFI6-Touch-LCD-4C** | IPS redonda 4″ · 720×720 · MIPI-DSI | ✅ Soportada (`p4-4c`), interfaz completa con tablero | [Waveshare](https://www.waveshare.com/esp32-p4-wifi6-touch-lcd-3.4c.htm?sku=31522) · [Amazon](https://link.amazon/B0ezg9Zsc) |
 | ESP32-S3-Touch-LCD-1.85C | LCD redonda 1,85″ · 360×360 | 🔜 En camino | [Waveshare](https://www.waveshare.com/esp32-s3-touch-lcd-1.85c.htm?sku=30683) · [Amazon](https://link.amazon/B0bORP7J7) |
-| ESP32-S3-Touch-AMOLED-2.06 | AMOLED 2,06″ (reloj) · 410×502 | 🔜 En camino | [Waveshare](https://www.waveshare.com/esp32-s3-touch-amoled-2.06.htm?sku=31957) |
+| ESP32-S3-Touch-AMOLED-2.06 | AMOLED 2,06″ (reloj) · 410×502 | 🔜 En camino | [Waveshare](https://www.waveshare.com/esp32-s3-touch-amoled-2.06.htm?sku=31957) · [Amazon](https://link.amazon/B09RK0t7h) |
 | ESP32-P4-WIFI6-Touch-LCD-3.5 | IPS 3,5″ · 320×480 · cámara | 🔜 En camino | [Waveshare](https://www.waveshare.com/esp32-p4-wifi6-touch-lcd-3.5.htm?sku=33360) · [Amazon](https://link.amazon/B0f503CEz) |
 
 <sub>Los enlaces de Amazon son de afiliado: si compras por ellos, el proyecto recibe una pequeña comisión sin que te cueste más.</sub>
